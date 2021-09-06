@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "pug src -o dist && rm dist/layout.html",
-    "deploy": "git gh-deploy dist"
+    "deploy": "git gh-deploy dist",
+    "serve": "http-server dist"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/programmeruser2/programmeruser2.github.io#readme",
   "devDependencies": {
+    "http-server": "^13.0.1",
     "pug-cli": "^1.0.0-alpha6"
   }
 }
